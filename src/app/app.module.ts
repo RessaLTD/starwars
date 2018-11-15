@@ -1,12 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Location } from '@angular/common';
 
 import { AppConfig } from './app-config';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AppShellModule } from './app-shell/app-shell.module';
+import { AppCommonModule } from './app-common/app-common.module';
+import { UserProgressService } from './services/user-progress.service';
+import { UrlHelperService } from './services/url-helper.service';
 
 @NgModule({
 	declarations: [
@@ -17,12 +22,20 @@ import { AppRoutingModule } from './app-routing.module';
 		BrowserAnimationsModule,
 		AppRoutingModule,
 		HttpModule,
-		HttpClientModule
+		HttpClientModule,
+		AppShellModule,
+		AppCommonModule
 	],
 	providers: [
-		AppConfig
+		AppConfig,
+		Location,
+		UserProgressService,
+		UrlHelperService,
+		Title
 	],
-	bootstrap: [AppComponent]
+	bootstrap: [
+		AppComponent
+	]
 })
 
 export class AppModule {

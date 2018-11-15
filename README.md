@@ -4,7 +4,7 @@
 
 - install nodejs from http://nodejs.org
 - install angular CLI `npm install -g @angular/cli`
-- from command line, run `npm install` in Angular folder
+- from command line, run `npm install` in starwars folder
 - it will download all needed js modules (into node_modules), do not add them to git
 
 #### Run development server
