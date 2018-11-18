@@ -81,7 +81,7 @@ export interface IStarshipDto extends IDataDto {
 	max_atmosphering_speed: string;
 	crew: string;
 	passengers: string;
-	cargoCapacity: string;
+	cargo_capacity: string;
 	consumables: string;
 	hyperdrive_rating: string;
 	MGLT: string;

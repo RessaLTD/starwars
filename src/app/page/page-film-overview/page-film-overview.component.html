@@ -1,0 +1,36 @@
+﻿<table class="table table-condensed table-bordered items-table">
+	<thead>
+	<tr>
+		<th>Title</th>
+		<th>Episode id</th>
+		<th>Opening crawl</th>
+		<th>Director</th>
+		<th>Producer</th>
+		<th>Release date</th>
+		<!--
+		<th>Characters</th>
+		<th>Planets</th>
+		<th>Starships</th>
+		<th>Vehicles</th>
+		<th>Species</th>
+		-->
+	</tr>
+	</thead>
+	<tbody>
+	<tr *ngFor="let item of data.results">
+		<td>{{item.title}}</td>
+		<td>{{item.episode_id}}</td>
+		<td>{{item.opening_crawl}}</td>
+		<td>{{item.director}}</td>
+		<td>{{item.producer}}</td>
+		<td>{{item.release_date}}</td>
+		<!--
+		<td>{{item.characters}}</td>
+		<td>{{item.planets}}</td>
+		<td>{{item.starships}}</td>
+		<td>{{item.vehicles}}</td>
+		<td>{{item.species}}</td>
+		-->
+	</tr>
+	</tbody>
+</table>

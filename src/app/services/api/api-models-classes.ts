@@ -74,7 +74,7 @@ export class StarshipDto extends DataDto implements ApiModels.IStarshipDto {
 	max_atmosphering_speed: string = null;
 	crew: string = null;
 	passengers: string = null;
-	cargoCapacity: string = null;
+	cargo_capacity: string = null;
 	consumables: string = null;
 	hyperdrive_rating: string = null;
 	MGLT: string = null;

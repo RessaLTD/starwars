@@ -1,0 +1,38 @@
+﻿<table class="table table-condensed table-bordered items-table">
+	<thead>
+	<tr>
+		<th>Name</th>
+		<th>Classification</th>
+		<th>Designation</th>
+		<th>Average height</th>
+		<th>Skin colors</th>
+		<th>Hear colors</th>
+		<th>Eye colors</th>
+		<th>Average lifespan</th>
+		<th>Homeworld</th>
+		<th>Language</th>
+		<!--
+		<th>People</th>
+		<th>Films</th>
+		-->
+	</tr>
+	</thead>
+	<tbody>
+	<tr *ngFor="let item of data.results">
+		<td>{{item.name}}</td>
+		<td>{{item.classification}}</td>
+		<td>{{item.designation}}</td>
+		<td>{{item.average_height}}</td>
+		<td>{{item.skin_colors}}</td>
+		<td>{{item.hear_colors}}</td>
+		<td>{{item.eye_colors}}</td>
+		<td>{{item.average_lifespan}}</td>
+		<td>{{item.homeworld}}</td>
+		<td>{{item.language}}</td>
+		<!--
+		<td>{{item.people}}</td>
+		<td>{{item.films}}</td>
+		-->
+	</tr>
+	</tbody>
+</table>

@@ -1,5 +1,5 @@
 ﻿import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 import { EStarWarsDataType } from '../../services/api/api-models';
@@ -20,7 +20,6 @@ export class PageOverviewComponent implements OnInit {
 	constructor(
 		private title: Title,
 		private route: ActivatedRoute,
-		private router: Router,
 		private starwarsApiService: StarwarsApiService,
 		private progress: UserProgressService
 	) {

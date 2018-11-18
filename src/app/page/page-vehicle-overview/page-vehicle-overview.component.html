@@ -1,0 +1,40 @@
+﻿<table class="table table-condensed table-bordered items-table">
+	<thead>
+	<tr>
+		<th>Name</th>
+		<th>Model</th>
+		<th>Manufacturer</th>
+		<th>Cost in credits</th>
+		<th>Length</th>
+		<th>Max atmosphering speed</th>
+		<th>Crew</th>
+		<th>Passengers</th>
+		<th>Cargo capacity</th>
+		<th>Consumables</th>
+		<th>Vehicle class</th>
+		<!--
+		<th>Pilots</th>
+		<th>Films</th>
+		-->
+	</tr>
+	</thead>
+	<tbody>
+	<tr *ngFor="let item of data.results">
+		<td>{{item.name}}</td>
+		<td>{{item.model}}</td>
+		<td>{{item.manufacturer}}</td>
+		<td>{{item.cost_in_credits}}</td>
+		<td>{{item.length}}</td>
+		<td>{{item.max_atmosphering_speed}}</td>
+		<td>{{item.crew}}</td>
+		<td>{{item.passengers}}</td>
+		<td>{{item.cargo_capacity}}</td>
+		<td>{{item.consumables}}</td>
+		<td>{{item.vehicle_class}}</td>
+		<!--
+		<td>{{item.pilots}}</td>
+		<td>{{item.films}}</td>
+		-->
+	</tr>
+	</tbody>
+</table>

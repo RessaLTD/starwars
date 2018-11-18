@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { EditorEnumComponent } from './components/editor-enum/editor-enum.component';
 import { EditorTextComponent } from './components/editor-text/editor-text.component';
+import { MultilineTextComponent } from './components/multiline-text/multiline-text.component';
 
 @NgModule({
 	imports: [
@@ -12,11 +13,13 @@ import { EditorTextComponent } from './components/editor-text/editor-text.compon
 	],
 	declarations: [
 		EditorEnumComponent,
-		EditorTextComponent
+		EditorTextComponent,
+		MultilineTextComponent
 	],
 	exports: [
 		EditorEnumComponent,
-		EditorTextComponent
+		EditorTextComponent,
+		MultilineTextComponent
 	]
 })
 
