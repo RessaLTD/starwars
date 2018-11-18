@@ -12,7 +12,6 @@
 - `ng serve`
 - Navigate to `http://localhost:4200/`
 - The app will automatically reload if you change any of the source files.
-- Do not run it under IIS express nor IIS until, do not try to compile it under Visual Studio
 
 ## Build
 
